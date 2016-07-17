@@ -30,18 +30,36 @@ a:hover {
 html,
 body {
 /*css for full size background image*/
-  background: url(http://chriskn.github.io/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
   height: 100%;
   background-color: #333;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
  
+}
+
+.site-wrapper:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(http://chriskn.github.io/images/background.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
