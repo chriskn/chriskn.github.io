@@ -1,7 +1,7 @@
 document.write('\
 \
-<div class="footer navbar-fixed-bottom">\
-  <div>\
+<div class="mastfood">\
+  <div class="inner">\
     <p><a href="http:/ /getbootstrap.com/">Impressum</a></p>\
   </div>\
 </div>\
