@@ -1,8 +1,8 @@
 document.write('\
 \
-<div class="mastfoot">\
+<div class="footer navbar-fixed-bottom">\
   <div>\
-    <p><a href="http://getbootstrap.com/">Impressum</a></p>\
+    <p><a href="http:/ /getbootstrap.com/">Impressum</a></p>\
   </div>\
 </div>\
 \
