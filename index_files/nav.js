@@ -1,10 +1,15 @@
+$(document).ready(function() {
+        $(".content").load("home.html");
+});
+
+
 $("ul.nav a").each(function() {
     $(this).on("click", function(){
         $(".content").load($(this).attr("data-page"));
     });
 });
 
-$(".portfolio-item a").each(function() {
+$("div.portfolio-item a").each(function() {
     $(this).on("click", function(){
         $(".content").load($(this).attr("bikes/data-page"));
     });
