@@ -2,7 +2,14 @@ $(document).ready(function() {
         $(".content").load("home.html");
 });
 
+
 $("ul.nav a").each(function() {
+    $(this).on("click", function(){
+        $(".content").load($(this).attr("data-page"));
+    });
+});
+
+$(".bike").each(function() {
     $(this).on("click", function(){
         $(".content").load($(this).attr("data-page"));
     });
