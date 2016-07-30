@@ -2,13 +2,15 @@
 
 #galleria-loader{height: 1px}
 
+
+
 .galleria-container {
     position: relative;
     overflow: hidden;
     font: 12px/1.4 arial,sans-serif;
     color: #fff;
     /* background:#111 url(bg.png); */
-    background:black;
+    background:#333;
 }
 .galleria-container img {
     -moz-user-select: none;
@@ -32,6 +34,8 @@
     right: 0;
     z-index: 3;
     overflow: hidden;
+    background:#000;
+
 }
 .galleria-fullscreen,
 .galleria-play {
@@ -272,7 +276,6 @@ body .galleria-tooltip {
     left: 20px;
     z-index: 2;
     background: url(left.png) 50% 50% no-repeat;
-    opacity: 0;
 }
 .galleria-image-nav-right {
     left: auto;
