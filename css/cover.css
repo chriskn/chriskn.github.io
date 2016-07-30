@@ -30,7 +30,6 @@ body {
   background-color: #333;
 }
 body {
-  background: url(https://chriskn.github.io/images/background.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,10 +50,12 @@ body {
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  padding-top:5em;
 }
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+
 }
 .cover-container {
   margin-right: auto;
@@ -143,11 +144,11 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: absolute;
     bottom: 0;
   }
   /* Start the vertical centering */
