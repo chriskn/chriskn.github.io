@@ -4,7 +4,7 @@ $("ul.nav a").each(function() {
     });
 });
 
-$("div a").each(function() {
+$(".portfolio-item a").each(function() {
     $(this).on("click", function(){
         $(".content").load($(this).attr("bikes/data-page"));
     });
