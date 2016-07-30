@@ -1,18 +1,36 @@
+            <!-- jQuery -->
+     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./index_files/bootstrap.min.js"></script>
+
+    <script src="./index_files/galleria-1.4.2.min.js"></script>
+
+    
+
+        
+    
+
     <!-- Portfolio Item Heading -->
-        <div class="row cover-heading">
-                <h1 class="page-header text-left">Bike</h1>
-        </div>
+            <div class="row">
+                <h3 class="page-header text-left">Gelbe Gefahr</h3>
+            </div>
         <!-- /.row -->
 
         <!-- Portfolio Item Row -->
         <div class="row">
 
-            <div class=".col-xs-12 .col-md-8 text-left"><img class="img-responsive" src="http://placehold.it/750x500" alt=""></div>
+            <div class=".col-xs-12 .col-md-8 text-left">
+              <div id="galleria" class="galleria embed-responsive embed-responsive-16by9">
+                  <img src="http://www.audi-technology-portal.de/files/images/1016/ebike1_de__large.jpg" >
+                  <img src="http://www.e-mountainbike.com/sixcms/media.php/6/thumbnails/ub_haibike_2014_e-bike_H_Xduro_NDURO_PRO.jpg.3590758.jpg" >
+                  <img src="http://www.e-mountainbike.com/sixcms/media.php/6/thumbnails/ub_haibike_2014_e-bike_H_Xduro_NDURO_PRO.jpg.3590758.jpg" >              
+                  </div>
+            </div>
 
             <div class=".col-xs-6 .col-md-4 text-left">
-                <h3>Project Description</h3>
+                <h3>Beschreibung</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Project Details</h3>
+                <h3>Details</h3>
                 <ul>
                     <li>Lorem Ipsum</li>
                     <li>Dolor Sit Amet</li>
@@ -28,7 +46,7 @@
         <div class="row ">
 
             <div >
-                <h3 class="page-header text-left">Related Projects</h3>
+                <h3 class="page-header text-left">Weitere Bikes</h3>
             </div>
 
             <div class="col-sm-3 col-xs-6 ">
@@ -58,8 +76,9 @@
         </div>
         <!-- /.row -->
         
-    <!-- jQuery -->
-    <script src="./index_files/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="./index_files/bootstrap.min.js"></script>
+    <script>
+        Galleria.loadTheme('./index_files/themes/azur/galleria.azur.min.js');
+        Galleria.run('#galleria', {responsive:true,height:0.5625});
+     
+      
+    </script>
