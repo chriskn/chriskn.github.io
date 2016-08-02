@@ -27,6 +27,22 @@ function checkURL(hash)
 
 function loadPage(url)	//the function that loads pages via AJAX
 {
+	url=url.replace('#','').concat('.html');	//strip the #page part of the hash and leave only the page number
+
+	$('#loading').css('visibility','visible');	//show the rotating gif animation
+
+	$.ajax({	//create an ajax request to load_page.php
+		url: url,	//expect html to be returned
+		success: function(msg){
+            $("#content").load(url); 
+        
+		}
+
+	});
+
+/*
+function loadPage(url)	//the function that loads pages via AJAX
+{
 	url=url.replace('#','');	//strip the #page part of the hash and leave only the page number
 
 	$('#loading').css('visibility','visible');	//show the rotating gif animation
@@ -46,5 +62,5 @@ function loadPage(url)	//the function that loads pages via AJAX
 		}
 
 	});
-
+*/
 }
