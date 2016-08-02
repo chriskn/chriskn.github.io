@@ -10,7 +10,7 @@
     font: 12px/1.4 arial,sans-serif;
     color: #fff;
     /* background:#111 url(bg.png); */
-    background:#333;
+        background: rgba(255,215,0,0.0); 
 }
 .galleria-container img {
     -moz-user-select: none;
@@ -87,6 +87,7 @@
     z-index: 2;
     *top: 6px;
     *right: 6px;
+
 }
 .galleria-thumbnails-list {
     position: absolute!important;
